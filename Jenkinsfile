@@ -22,4 +22,9 @@ cp -avr include ${home_spdlog}
       }
     }
   }
+  post { 
+    always { 
+      cleanWs()
+     }
+  }
 }
